@@ -31,6 +31,7 @@ RUN \
   --prefix=/usr/local/nginx \
   --add-module=/workspace/nginx-http-flv-module-${NGINX_HTTP_FLV_MODULE} \
   --conf-path=/etc/nginx/nginx.conf \
+  --with-http_gzip_static_module \
   --with-threads \
   --with-http_ssl_module \
   --with-debug \
